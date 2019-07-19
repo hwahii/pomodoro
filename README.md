@@ -1,6 +1,6 @@
-#Pomodoro Timer
+# Pomodoro Timer
 
-##學習重點
+## 學習重點
 flexbox
 React 新手上路
 React Router
