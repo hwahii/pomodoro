@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b89696bc3613c857c6dfdf87633a6d1c",
+    "revision": "2b0d892f2e7628aa74e072dcbad8c816",
     "url": "/pomodoro/index.html"
   },
   {
