@@ -6,7 +6,7 @@ import "./App.css";
 
 const MainPanel = () => (
     <Switch>
-        <Route exact path='/' component={NoTask}/>
+        <Route exact path='/pomodoro' component={NoTask}/>
         <Route path='/pomodoro-timer' component={PomodoroTimer}/>
     </Switch>
 );
