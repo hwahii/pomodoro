@@ -7,7 +7,7 @@ import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/pomodoro">
     <App />
   </BrowserRouter>,
   document.getElementById("root")
