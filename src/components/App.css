@@ -222,6 +222,8 @@ li {
 .sub-content-separation {
   height: 1px;
   background-color: #414141;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .sub-content-margin {
   height: 25px;
