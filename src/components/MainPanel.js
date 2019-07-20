@@ -1,14 +1,22 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
 import NoTask from './NoTask';
 import PomodoroTimer from './PomodoroTimer';
 import "./App.css";
 
-const MainPanel = () => (
-    <Switch>
-        <Route exact path='/pomodoro' component={NoTask}/>
-        <Route path='/pomodoro-timer' component={PomodoroTimer}/>
-    </Switch>
-);
+class MainPanel extends React.Component {
+  render() {
+    const timerMode = this.props.timerMode;
+    return <Tomato timerMode={timerMode} />;
+  }
+}
+
+function Tomato(props) {
+  const timerMode = props.timerMode;
+  if (timerMode === "PomodoroTimer") {
+    return <PomodoroTimer />;
+  } else if (timerMode === "NoTask") {
+    return <NoTask />;
+  }
+}
 
 export default MainPanel;
