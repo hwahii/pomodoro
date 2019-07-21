@@ -1,8 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import TomatoSmallColor from "../icons/tomato_small_color.svg";
-import TomatoSmallGray from "../icons/tomato_small_gray.svg";
 import AddTask from "./AddTask";
 import TaskList from "./TaskList";
 import Analytics from "./Analytics";
