@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5707381a43768cea26ecb1ec492e591c",
+    "revision": "448511f3e1371a6aa37d40ffa18590da",
     "url": "/pomodoro/index.html"
   },
   {
-    "revision": "1e72f4eba70cbec6ce76",
-    "url": "/pomodoro/static/css/main.3180663e.chunk.css"
+    "revision": "6ec3a7d3c27e264ed8d1",
+    "url": "/pomodoro/static/css/main.8cf3d17f.chunk.css"
   },
   {
-    "revision": "3c0efd8afa1cf971d305",
-    "url": "/pomodoro/static/js/2.8bca4376.chunk.js"
+    "revision": "434e81d339bdab370eae",
+    "url": "/pomodoro/static/js/2.c93c624f.chunk.js"
   },
   {
-    "revision": "1e72f4eba70cbec6ce76",
-    "url": "/pomodoro/static/js/main.ee885923.chunk.js"
+    "revision": "6ec3a7d3c27e264ed8d1",
+    "url": "/pomodoro/static/js/main.996894d0.chunk.js"
   },
   {
     "revision": "8d8194bde761299ff809",
@@ -22,6 +22,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "30013910784e4f7bf6e1714268c7d06f",
     "url": "/pomodoro/static/media/add_red.30013910.svg"
+  },
+  {
+    "revision": "32e0817ace0055170630751b47450aa7",
+    "url": "/pomodoro/static/media/add_white.32e0817a.svg"
+  },
+  {
+    "revision": "1998e7ea78461318f35ac6ecb9406018",
+    "url": "/pomodoro/static/media/analysis_red.1998e7ea.svg"
   },
   {
     "revision": "522ba8bee192d5df0a3eaedb5189b2a1",
@@ -36,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pomodoro/static/media/complete.cb415344.svg"
   },
   {
+    "revision": "f6f4664c5affd38c1aa5765db4ef38a7",
+    "url": "/pomodoro/static/media/list_red.f6f4664c.svg"
+  },
+  {
     "revision": "99b596caa2efee46c92373ab4bea4bf1",
     "url": "/pomodoro/static/media/list_white.99b596ca.svg"
   },
@@ -46,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5435d6449a001c96717f14dcb6a49a37",
     "url": "/pomodoro/static/media/reset_gray.5435d644.svg"
+  },
+  {
+    "revision": "1e25b3f452a8c966a8537cde5acd265e",
+    "url": "/pomodoro/static/media/ringtone_red.1e25b3f4.svg"
   },
   {
     "revision": "c1791935b805ce1c49248f6d822a98b1",
