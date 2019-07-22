@@ -53,12 +53,14 @@ class NavBar extends React.Component {
               </Link>
             </li>
           </ul>
-          <div className="toggle-tag">
-            <img src={TomatoSmallColor} alt="tomatoSmallColor" />
-            <div className="arrow">
-              <img src={arrowIcon} alt="arrow" />
+          <Link to="/" onClick={() => this.handleClick("None")}>
+            <div className="toggle-tag">
+              <img src={TomatoSmallColor} alt="tomatoSmallColor" />
+              <div className="arrow">
+                <img src={arrowIcon} alt="arrow" />
+              </div>
             </div>
-          </div>
+          </Link>
         </nav>
       </div>
     );
