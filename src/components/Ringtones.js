@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./Tab.css";
 import "./Ringtones.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
