@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ca77a83e6ba58d3804e42d080b5c217",
+    "revision": "74d8a802607d48bf5633b0ed7fcdf23f",
     "url": "/pomodoro/index.html"
   },
   {
-    "revision": "13bebc3278f7fe1d9b1b",
+    "revision": "d05029da4d459f8e8a10",
     "url": "/pomodoro/static/css/2.be8e8818.chunk.css"
   },
   {
-    "revision": "d79c343bc55cb94b62a2",
-    "url": "/pomodoro/static/css/main.0a7a747e.chunk.css"
+    "revision": "9b045a45e972614c14a8",
+    "url": "/pomodoro/static/css/main.11ee1c7e.chunk.css"
   },
   {
-    "revision": "13bebc3278f7fe1d9b1b",
-    "url": "/pomodoro/static/js/2.971696ea.chunk.js"
+    "revision": "d05029da4d459f8e8a10",
+    "url": "/pomodoro/static/js/2.29d8ac45.chunk.js"
   },
   {
-    "revision": "d79c343bc55cb94b62a2",
-    "url": "/pomodoro/static/js/main.4f272568.chunk.js"
+    "revision": "9b045a45e972614c14a8",
+    "url": "/pomodoro/static/js/main.44d8d6d9.chunk.js"
   },
   {
     "revision": "8d8194bde761299ff809",
