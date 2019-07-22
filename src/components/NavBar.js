@@ -9,12 +9,29 @@ import AddIcon from "./AddIcon";
 import ListIcon from "./ListIcon";
 import AnalyticsIcon from "./AnalyticsIcon";
 import RingtonesIcon from "./RingtonesIcon";
-
+class ArrowIcon extends React.Component {
+  render() {
+    const activeIcon = this.props.activeIcon;
+    if (activeIcon === "None") {
+      return (
+        <div className="arrow">
+          <img className="reverse-arrow" src={arrowIcon} alt="arrow" />
+        </div>
+      );
+    } else {
+      return (
+        <div className="arrow">
+          <img src={arrowIcon} alt="arrow" />
+        </div>
+      );
+    }
+  }
+}
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { activeIcon: "" };
+    this.state = { activeIcon: "None" };
   }
   handleClick(icon) {
     this.setState({ activeIcon: icon });
@@ -56,9 +73,7 @@ class NavBar extends React.Component {
           <Link to="/" onClick={() => this.handleClick("None")}>
             <div className="toggle-tag">
               <img src={TomatoSmallColor} alt="tomatoSmallColor" />
-              <div className="arrow">
-                <img src={arrowIcon} alt="arrow" />
-              </div>
+              <ArrowIcon activeIcon={activeIcon}/>
             </div>
           </Link>
         </nav>
