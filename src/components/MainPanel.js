@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 import NoTask from './NoTask';
 import PomodoroTimer from './PomodoroTimer';
-import "./App.css";
+import './App.css';
 
 class MainPanel extends React.Component {
-  render() {
-    const timerMode = this.props.timerMode;
-    return <Tomato timerMode={timerMode} />;
-  }
+	render() {
+		const timerMode = this.props.timerMode;
+		return <Tomato timerMode={timerMode} />;
+	}
 }
 
 function Tomato(props) {
-  const timerMode = props.timerMode;
-  if (timerMode === "PomodoroTimer") {
-    return <PomodoroTimer />;
-  } else if (timerMode === "NoTask") {
-    return <NoTask />;
-  }
+	const timerMode = props.timerMode;
+	if (timerMode === 'PomodoroTimer') {
+		return <PomodoroTimer />;
+	} else if (timerMode === 'NoTask') {
+		return <NoTask />;
+	}
 }
 
 export default MainPanel;

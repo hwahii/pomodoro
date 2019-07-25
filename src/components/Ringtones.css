@@ -1,38 +1,42 @@
 .ring-tone-play {
-  margin-left: auto;
+	margin-left: auto;
 }
+
 .selected-circle {
-  width: 13px;
-  height: 13px;
-  background-color: #ea5548;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 13px;
+	width: 13px;
+	height: 13px;
+	background-color: #ea5548;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 13px;
 }
 
 .unselected-circle {
-  width: 9px;
-  height: 9px;
-  background-color: transparent;
-  border: 2px solid #ea5548;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 13px;
+	width: 9px;
+	height: 9px;
+	background-color: transparent;
+	border: 2px solid #ea5548;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 13px;
 }
+
 .ring-tone-name {
-  font-size: 16px;
+	font-size: 16px;
 }
+
 .play-circle {
-  margin-left: auto;
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
-  border: 2px solid #acacac;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 9px;
+	margin-left: auto;
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	border: 2px solid #acacac;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 9px;
 }
+
 .img-in-circle {
-  margin-top: -2px;
-  margin-left: -2px;
+	margin-top: -2px;
+	margin-left: -2px;
 }
