@@ -4,6 +4,9 @@ import startRedIcon from '../icons/start_red.svg';
 import pauseGrayIcon from '../icons/pause_gray.svg';
 import resetGrayIcon from '../icons/reset_gray.svg';
 import completeIcon from '../icons/complete.svg';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import './App.css';
 
 class PomodoroTimer extends React.Component {
 	constructor(props) {
@@ -38,6 +41,7 @@ class PomodoroTimer extends React.Component {
 		this.setState({ time: 0, isOn: false });
 	}
 	render() {
+		const percentage = 0;
 		return (
 			<div className="main-panel">
 				<div className="pomodoro-timer-box">
@@ -46,17 +50,17 @@ class PomodoroTimer extends React.Component {
 					<div className="timer-tasktext-tasktomatos-margin" />
 					<div className="timer-task-tomatos">O O O O</div>
 					<div className="timer-tomatos-pomodoro-margin" />
-					<div>
-						<div className="progress-circle p75 over50">
-							<span>{new Intl.DateTimeFormat('zh-TW', {
-								minute: '2-digit',
-								second: '2-digit'
-							}).format(this.state.time)}</span>
-							<div className="left-half-clipper">
-								<div className="first50-bar" />
-								<div className="value-bar" />
-							</div>
-						</div>
+					<div className="pomodoro-text">
+						<CircularProgressbar value={percentage} text={new Intl.DateTimeFormat('zh-TW', {
+							minute: '2-digit',
+							second: '2-digit'
+						}).format(this.state.time)} strokeWidth={15} styles={buildStyles({
+							strokeLinecap: 'butt',
+							textSize: '13px',
+							textColor: '#333333',
+							pathColor: '#EA5548',
+							trailColor: '#ACACAC',
+						})} />
 					</div>
 					<div className="timer-pomodoro-buttons-margin" />
 					<div className="timer-buttons">
