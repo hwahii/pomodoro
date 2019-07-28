@@ -17,7 +17,8 @@ class PomodoroTimer extends React.Component {
 		this.state = {
 			time: 0,
 			isOn: false,
-			start: 0
+			start: 0,
+			percentage: 0
 		};
 	}
 
@@ -29,7 +30,8 @@ class PomodoroTimer extends React.Component {
 				start: Date.now() - this.state.time
 			});
 			this.timer = setInterval(() => this.setState({
-				time: Date.now() - this.state.start
+				time: Date.now() - this.state.start,
+				percentage: Math.floor((Date.now() - this.state.start) / (60 * 10))
 			}), 1000);
 		}
 	}
@@ -38,10 +40,9 @@ class PomodoroTimer extends React.Component {
 		clearInterval(this.timer);
 	}
 	resetTimer() {
-		this.setState({ time: 0, isOn: false });
+		this.setState({ time: 0, isOn: false, percentage: 0 });
 	}
 	render() {
-		const percentage = 0;
 		return (
 			<div className="main-panel">
 				<div className="pomodoro-timer-box">
@@ -51,7 +52,7 @@ class PomodoroTimer extends React.Component {
 					<div className="timer-task-tomatos">O O O O</div>
 					<div className="timer-tomatos-pomodoro-margin" />
 					<div className="pomodoro-text">
-						<CircularProgressbar value={percentage} text={new Intl.DateTimeFormat('zh-TW', {
+						<CircularProgressbar value={this.state.percentage} text={new Intl.DateTimeFormat('zh-TW', {
 							minute: '2-digit',
 							second: '2-digit'
 						}).format(this.state.time)} strokeWidth={15} styles={buildStyles({
