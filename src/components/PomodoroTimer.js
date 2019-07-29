@@ -1,13 +1,30 @@
 import React from 'react';
 import './css-circular-prog-bar.css';
 import startRedIcon from '../icons/start_red.svg';
+import startGrayIcon from '../icons/start_gray.svg';
 import pauseGrayIcon from '../icons/pause_gray.svg';
 import resetGrayIcon from '../icons/reset_gray.svg';
 import completeIcon from '../icons/complete.svg';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import './App.css';
-
+function StartIcon(props) {
+	const isOn = props.isOn;
+	const onClick = props.onClick;
+	if (isOn) {
+		return (
+			<div className="small-circlebutton" onClick={onClick}>
+				<img src={startRedIcon} alt="start" />
+			</div>
+		);
+	} else {
+		return (
+			<div className="small-circlebutton" onClick={onClick}>
+				<img src={startGrayIcon} alt="start" />
+			</div>
+		);
+	}
+}
 class PomodoroTimer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -65,9 +82,7 @@ class PomodoroTimer extends React.Component {
 					</div>
 					<div className="timer-pomodoro-buttons-margin" />
 					<div className="timer-buttons">
-						<div className="small-circlebutton" onClick={this.startTimer}>
-							<img src={startRedIcon} alt="start" />
-						</div>
+						<StartIcon isOn={this.state.isOn}  onClick={this.startTimer} />
 						<div className="small-circlebutton" onClick={this.stopTimer}>
 							<img src={pauseGrayIcon} alt="pause" />
 						</div>
